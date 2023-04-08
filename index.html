@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerçek Oy Pusulası</title>
+    <!-- Rahatsız etmeye devam :) -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <a href="#" id="btn-download">İndir</a>
+        </div>
+        <div class="download-div">
+            <h1>Gerçek Oy Pusulası</h1>
+            <div class="container">
+                <div class="card">
+                    <div class="left">
+                        <img id="left-image" src="">
+                        <input id="left-file-input" type="file" accept="image/*"
+                            onchange="previewImage('left-file-input', 'left-image')">
+                        <p contenteditable="true">Aday 1 (buraya tıklayın)</p>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="right">
+                        <img id="right-image" src="">
+                        <input id="right-file-input" type="file" accept="image/*"
+                            onchange="previewImage('right-file-input', 'right-image')">
+                        <p contenteditable="true">Aday 2 (buraya tıklayın)</p>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

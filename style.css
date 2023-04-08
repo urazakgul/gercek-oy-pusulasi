@@ -1,0 +1,181 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-div {
+    text-align: center;
+}
+
+h1 {
+    background-color: darkred;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: stretch;
+    margin: 20px 0;
+    flex-wrap: nowrap;
+    height: 700px;
+}
+
+.card p {
+    padding: 10px;
+    max-width: 250px;
+    word-wrap: break-word;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.card>div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.card>.left {
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.card>.right {
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.card>div:first-child {
+    width: 100%;
+    max-width: 100%;
+}
+
+.card>div>input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+#btn-download {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: darkred;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid darkred;
+}
+
+#btn-download:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid darkred;
+    transition: none;
+}
+
+.left {
+    position: relative;
+}
+
+.left:before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 40px;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+}
+
+.left:after {
+    content: "";
+    position: absolute;
+    top: 85%;
+    left: 40px;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+}
+
+.right {
+    position: relative;
+}
+
+.right:before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 40px;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+}
+
+.right:after {
+    content: "";
+    position: absolute;
+    top: 85%;
+    right: 40px;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        margin: 0;
+    }
+
+    .left {
+        order: 1;
+    }
+
+    .right {
+        order: 2;
+    }
+}
